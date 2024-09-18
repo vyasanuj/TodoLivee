@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux'
 import { ADDTodo } from '../Features/Todo/Todoslice'
 
 function AddTodo() {
-    const [Input , setInput] = useState()
+    const [Input , setInput] = useState([])
     const dispatch = useDispatch()
     const addTodoHandler = (e) => {
         e.preventDefault()
